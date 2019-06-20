@@ -1,0 +1,58 @@
+#include<stdio.h>
+int main()
+{
+	char num[1024];
+	scanf("%[^\n]",&num);
+	int i,arr[10];
+	for(i=0;i<10;i++)
+	{
+		arr[i]=0;
+	}
+	for(i=0;num[i]!='\0';i++)
+	{
+		if(num[i]=='0')
+		{
+			arr[0]++;
+		}
+		if(num[i]=='1')
+		{
+			arr[1]++;
+		}
+		if(num[i]=='2')
+		{
+			arr[2]++;
+		}
+		if(num[i]=='3')
+		{
+			arr[3]++;
+		}
+		if(num[i]=='4')
+		{
+			arr[4]++;
+		}
+		if(num[i]=='5')
+		{
+			arr[5]++;
+		}
+		if(num[i]=='6')
+		{
+			arr[6]++;
+		}
+		if(num[i]=='7')
+		{
+			arr[7]++;
+		}
+		if(num[i]=='8')
+		{
+			arr[8]++;
+		}
+		if(num[i]=='9')
+		{
+			arr[9]++;
+		}
+	}
+	for(i=0;i<10;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+}
